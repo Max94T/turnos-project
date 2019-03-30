@@ -1,0 +1,157 @@
+.contenedorDetalle.active .ctnFormulario.alt {
+  top: 0px;
+  right: 0;
+  width: 100%;
+  min-width: 100%;
+  height: 120%;
+  border-radius: 5px;
+  /* padding: 35px 0 40px; */
+  overflow: hidden;
+  /* ESTE CONTENEDOR SE TIENE QUE IR AGRANDANDO SEGUN LA CANTIDAD DE DATOS DEL FORMULARIO SINO NO SE VERAN LOS CONT */
+}
+
+.contenedorDetalle.active .ctnFormulario2.alt2 {
+  top: 0px;
+  right: 0;
+  /* width: 100%; */
+  /* min-width: 100%; */
+  /* height: 120%; */
+  border-radius: 5px;
+  /* padding: 35px 0 40px; */
+  overflow: hidden;
+  display: none;
+  /* ESTE CONTENEDOR SE TIENE QUE IR AGRANDANDO SEGUN LA CANTIDAD DE DATOS DEL FORMULARIO SINO NO SE VERAN LOS CONT */
+}
+
+.contenedorDetalle.active .ctnFormulario3.alt3 {
+  top: 0px;
+  right: 0;
+  /* width: 100%; */
+  /* min-width: 100%; */
+  /* height: 120%; */
+  border-radius: 5px;
+  /* padding: 35px 0 40px; */
+  overflow: hidden;
+  display: none;
+  /* ESTE CONTENEDOR SE TIENE QUE IR AGRANDANDO SEGUN LA CANTIDAD DE DATOS DEL FORMULARIO SINO NO SE VERAN LOS CONT */
+}
+
+.contenedorDetalle.active .ctnFormulario2.alt2 .toggle2 {
+  position: absolute;
+  top: 40px;
+  right: -70px;
+  box-shadow: none;
+  -webkit-transform: scale(10);
+  transform: scale(10);
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.contenedorDetalle.active .ctnFormulario3.alt3 .toggle3 {
+  position: absolute;
+  top: 40px;
+  right: -70px;
+  box-shadow: none;
+  -webkit-transform: scale(10);
+  transform: scale(10);
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.contenedorDetalle.active .ctnFormulario.alt .toggle {
+  position: absolute;
+  top: 40px;
+  right: -70px;
+  box-shadow: none;
+  -webkit-transform: scale(10);
+  transform: scale(10);
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+.contenedorDetalle.active .ctnFormulario.alt .toggle:before {
+  content: '';
+}
+
+.contenedorDetalle.active .ctnFormulario2.alt2 .toggle2:before {
+  content: '';
+}
+
+.contenedorDetalle.active .ctnFormulario3.alt3 .toggle3:before {
+  content: '';
+}
+
+.contenedorDetalle.active .ctnFormulario.alt .title,
+.contenedorDetalle.active .ctnFormulario.alt .input-container,
+.contenedorDetalle.active .ctnFormulario.alt .button-container {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s ease;
+}
+
+/* .container.active .ctnFormulario.alt .headerLog{
+  width: auto;
+}
+
+.ctnFormulario .headerLog img{
+  width: 100px;
+  height: 100px;
+  border-left: 5px solid #110C0D;
+  float: left;
+} */
+
+.contenedorDetalle.active .ctnFormulario.alt .title {
+  position: relative;
+  z-index: 1;  
+  margin: 0 0 35px;
+  padding: 10px 0 10px 50px;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* height: 100px;
+  line-height: 80px; */
+}
+
+.contenedorDetalle.active .ctnFormulario.alt .title {
+  transition-delay: .3s;
+}
+.contenedorDetalle.active .ctnFormulario.alt .input-container {
+  transition-delay: .4s;
+}
+.contenedorDetalle.active .ctnFormulario.alt .input-container:nth-child(2) {
+  transition-delay: .5s;
+}
+.contenedorDetalle.active .ctnFormulario.alt .input-container:nth-child(3) {
+  transition-delay: .6s;
+}
+.contenedorDetalle.active .ctnFormulario.alt .button-container {
+  transition-delay: .7s;
+}
+
+/* DETALLE O INFOMACION */
+
+.ctnFormulario .input-container.active .labelTitulo {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  transition: 0.2s ease;
+}
+
+.ctnFormulario .input-container.active .label {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  transition: 0.2s ease;
+}

@@ -1,0 +1,90 @@
+body {
+
+/* Ubicación de la imagen */
+
+/* background-image: url('../imagenes/imagenes/imgFondo.jpg'); */
+background-image: url('../imagenes/fondo1.jpg');
+
+/* Para dejar la imagen de fondo centrada, vertical y
+
+horizontalmente */
+
+background-position: center center;
+
+/* Para que la imagen de fondo no se repita */
+
+background-repeat: no-repeat;
+
+/* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+
+background-attachment: fixed;
+
+/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+
+background-size: cover;
+
+/* Se muestra un color de fondo mientras se está cargando la imagen
+
+de fondo o si hay problemas para cargarla */
+
+background-color: #bbbec3!important;
+
+/* ESCONDO LAS BARRAS LATERALES */
+
+overflow-x: hidden; /* Este lo saco por el momento */
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: initial;
+  }
+}
+
+
+.marcaDeAgua{
+  
+ position: absolute;
+  top: 85%;
+  right: 0px;
+  left: 1px;
+  z-index: 10;
+  width: 300px;
+  height: 70px;
+
+  /* content: url('../imagenes/imagenes/logo.png'); */
+  background-image: url('../imagenes/imagenes/favicon.png');
+  background-repeat: no-repeat;
+  /* font-size: 15em;   */
+  /* color: rgba(52, 166, 214, 0.4); */
+  /* z-index: 9999; */
+  /* width:300px;
+  height:225px; */
+ 
+  /* display: flex; */
+  /* align-items: center; */
+ /*  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+
+  filter:alpha(opacity=50);-moz-opacity:.50;opacity:.50;
+
+    
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  -o-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+ 

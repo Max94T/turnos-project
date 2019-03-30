@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	 <!-- Autor: Max Teran -->
+	 <!-- METADATOS -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	      
+        <meta content="index" name="robots">
+        <meta content="mutual" name="keywords">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">  
+    <!-- ------------- -->
+	<title>[SignInPageTitulo]</title>
+
+    <!-- Estilos y Links Propios-->
+    <link rel="icon" href="site/images/icono.ico" type="image/x-icon" sizes="16x16 32x32"/>	
+	<link rel="stylesheet" type="text/css" href="cssPropio/estilosReset.css">
+	<link rel="stylesheet" type="text/css" href="cssPropio/estiloPagina.css">
+	<link rel="stylesheet" type="text/css" href="cssPropio/formulario.css">
+	<link rel="stylesheet" type="text/css" href="cssPropio/detalle.css">
+	<link rel="stylesheet" type="text/css" href="cssPropio/boton.css">
+
+	<!-- Estilos Bootstrap - v4.3 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="jQuery/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	
+
+
+</head>
+<body>
+
+	<div class="container-fluid">
+
+
+		<!-- prinsipal -->
+    <main class="row justify-content-center align-items-center d-flex">       
+
+
+        <div class="col-12 mb-5 ">
+             <!-- Titulo de la pagina -->
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-3 col-lg-5 col-md-6 col-sm-10 ">
+
+                        <div class="row justify-content-start mt-4">
+                            <div class="col-12">
+                                <img src="imagenes/LogoSol1.png" >   
+                            </div>                                                             
+                        </div>
+                       <!--  <div class="col-12">
+                            <h1 class="display-4 text-center">G.I.N</h1>
+                            <p class="h4 text-xl-right text-lg-right">Modulo Web</p>
+                            <!-- <h2 class="title text-muted"><small></small></h2>
+                        </div> -->
+                        <!-- <div class="headerLogin">
+                                    
+                                    
+                        </div>    -->                     
+                    </div>
+                </div>
+    <!-- ---------- -->
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-10 col-12 align-self-center contenedorDetalle"> <!-- Contenedor ocupa 3 columnas -->
+            
+            <!-- La clase contenedorDetalle es la que esconde o muestra el detalle.
+                Cuando se hace clic sobre el boton activa el scrip de abajo
+                 cambiando la class a contenedorDetalle.activa y eso hace que se muestre cambiando el estilo -->
+
+
+            <form wicket:id="form" class="row"><!-- Estan dentro de una fila -->
+                            
+
+                            <div class="ctnFormulario col-12">
+                                <div class="headerLog">
+                                    <!-- <img src="imagenes/imagenes/logo.png">
+                                    <h1 class="title">G.I.N Modulo Web</h1> -->
+                                    <h1 class="title text-center">Iniciar Sesion</h1>
+                                </div>
+
+                                <div class="input-container">
+                                    <input wicket:id="usuario" type="text" id="#{label}" required="required">
+                                    <label for="#{label}"><wicket:message key="usuario">Usuario</wicket:message></label>
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="input-container">
+                                    <input wicket:id="password" type="password" id="#{label}" required="required">
+                                    <label for="#{label}"><wicket:message key="password">Contraseña</wicket:message></label>
+                                    <div class="bar"></div>
+                                </div>
+                                <div align="center">
+                                    <button class="Boton-LinearGradient3" type="submit">
+										<img src="imagenes/confirmar32x32.png" width="24" height="24" alt="">
+										<label class="d-xl-inline d-lg-inline d-md-inline d-sm-none d-none"><wicket:message key="submit">Aceptar</wicket:message></label>
+                                    	</button>
+
+                                    	<button class="Boton-LinearGradient3" type="submit">
+										<img src="imagenes/reiniciar32x32.png" width="24" height="24" alt="">
+										<label class="d-xl-inline d-lg-inline d-md-inline d-sm-none d-none"><wicket:message key="submit">Reiniciar</wicket:message></label>
+                                    	</button>
+                                    
+                                </div>
+
+                            </div>
+
+                            <!-- ----PRIMER FORMULARIO----- ocupa todo el contenedor -->
+
+                            <!-- SEGUNDO FORMULARIO -->
+                            <div class="ctnFormulario alt col-12">
+                                <div class="toggle"></div>
+                                <h1 class="title">Sistema de Turnos
+                                    <div class="close"></div>
+                                </h1>
+                                <!--<form>-->
+                                <div class="input-container">
+                                    <label class="labelTitulo">Empresa</label><br>
+                                    <label class="label">CDF Tecnologia Informatica</label>
+                                </div>
+                                <div class="input-container">
+                                    <label class="labelTitulo">Copyright</label><br>
+                                    <label class="label">&copy;2017-2018 - Todos los derechos reservados</label>
+                                </div>                                
+                            </div>
+
+
+                         
+                            <!-- TERCER FORMULARIO -->
+                            <div class="ctnFormulario2 alt2 d-none">
+                                <button data-toggle="tooltip" data-placement="top" title="Nuevo usuario" class="toggle2" wicket:message="title:page.recuperar.title" type="button" wicket:id="recuperar"></button>
+                            </div>   
+
+                            <div class="ctnFormulario3 alt3 d-none">
+                                <button class="toggle3" wicket:message="title:page.nuevoUsuario.title" type="button" wicket:id="nuevoUsuario"></button>
+                            </div>                             
+
+                        </form>
+        </div> 
+
+            
+    </main>
+
+
+	</div><!-- Aca termina el container-fluid -->
+
+	<script>
+
+             $('.toggle').on('click', function () {
+                $('.contenedorDetalle').stop().addClass('active');
+                $('.input-container').stop().addClass('active');
+            });
+
+            $('.close').on('click', function () {
+                $('.contenedorDetalle').stop().removeClass('active');
+                $('.input-container').stop().removeClass('active');
+            });
+
+
+
+            //# sourceURL=pen.js
+        </script>
+
+
+
+
+	
+</body>
+</html>
